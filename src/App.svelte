@@ -26,7 +26,7 @@
       </div>
       &nbsp;&nbsp;
       <div>
-        <p>First Name</p>
+        <p>Last Name</p>
         <List store={lastName} local="ln" />
       </div>
     </div>
