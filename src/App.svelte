@@ -53,16 +53,17 @@
   h1 {
     color: #ff3e00;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     line-height: 1.1;
     margin: 2rem auto;
-    max-width: 14rem;
+    max-width: 12rem;
   }
 
   @media (min-width: 480px) {
     h1 {
       max-width: none;
+      font-size: 4rem;
     }
 
     p {
