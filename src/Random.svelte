@@ -8,7 +8,7 @@
   let isConcat = false;
 
   const generate = () => {
-    if ($firstName[0] || $lastName[0]) {
+    if ($firstName[0] && $lastName[0]) {
       if (isConcat) {
         const concated = $firstName.concat($lastName);
         const rand = faker.helpers.arrayElements(concated, 2);
