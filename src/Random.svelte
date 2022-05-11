@@ -10,9 +10,8 @@
   const generate = () => {
     if ($firstName[0] || $lastName[0]) {
       if (isConcat) {
-        $firstName.concat($lastName);
-        const rand = faker.helpers.arrayElements($firstName, 2);
-        console.log($firstName.concat($lastName));
+        const concated = $firstName.concat($lastName);
+        const rand = faker.helpers.arrayElements(concated, 2);
         return `${rand[0]} ${rand[1]}`;
       } else {
         const fN = faker.helpers.arrayElement($firstName);
