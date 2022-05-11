@@ -27,7 +27,7 @@
 
 <style>
   textarea {
-    min-width: 200px;
+    min-width: 100px;
     max-width: 350px;
     min-height: 100px;
     -moz-border-bottom-colors: none;
