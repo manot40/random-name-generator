@@ -3,10 +3,22 @@
   import List from "./List.svelte";
 
   import { store } from "./lib/store";
+
+  const umami = {
+    umamiUrl: import.meta.env?.VITE_UMAMI_URL,
+    umamiKey: import.meta.env?.VITE_UMAMI_KEY,
+  }
+
   const { firstName, lastName } = store;
 
   let name;
 </script>
+
+<svelte:head>
+  {#if umami.umamiUrl}
+    <script async defer src={umami.umamiUrl} data-website-id={umami.umamiKey} />
+  {/if}
+</svelte:head>
 
 <main>
   <h1>{name}</h1>
